@@ -1,0 +1,37 @@
+$f-size: 16;
+$f-size-default: 16;
+//===============================================
+$fxxl: 1920;
+$xs: 480px;
+$sm: 834px;
+$md: $sm;
+$lg: 1120px;
+$xl: 1480px;
+$xxl: 1920px;
+
+$mxs: 479px;
+$msm: 833px;
+$mlg: 1119px;
+$mxl: 1479px;
+$mxxl: 1919px;
+$mmd: $msm;
+
+$plr: 0; //Отступы по бокам
+$plrSm: 16; //Отступы по бокам на мобилках
+$wsm: calc(780 / $f-size-default) + rem;
+$wmd: calc(1360 / $f-size-default) + rem;
+$wxl: calc(1730 / $f-size-default) + rem;
+//===============================================
+$font: 'Inter', normal;
+$color-header: #fff7eb;
+$color-grey: #e8e8e8;
+$color-light-grey: #6b6b6b;
+$color-green: #337566;
+$color-text: #0f0f0f;
+$color-footer: #f5f5f5;
+$color-border: #dbdbdb;
+$color-border-two: #cccccc;
+$color-red: #bd3223;
+$color-span: #50586a;
+$color-ticket: rgba(27, 29, 34, 0.6);
+$color-select: #ededed;

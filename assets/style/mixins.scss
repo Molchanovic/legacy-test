@@ -1,0 +1,4 @@
+@mixin fslh($fsvalue, $lhvalue) {
+  font-size: calc($fsvalue / $f-size-default) + rem;
+  line-height: calc($lhvalue / $fsvalue * 100%);
+}
