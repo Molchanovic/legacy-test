@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxt/image',
     'nuxt-quasar-ui',
+    'nuxt-viewport',
   ],
   quasar: {
     components: {
@@ -34,5 +35,12 @@ export default defineNuxtConfig({
   alias: {
     scss: '/assets/scss',
     components: '/components',
+  },
+  app: {
+    head: {
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+      title: 'Наследие - тестовое задание',
+    },
   },
 })

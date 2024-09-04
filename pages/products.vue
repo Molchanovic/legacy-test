@@ -6,7 +6,6 @@ definePageMeta({
 })
 
 const { data: data } = await useFetch(productsApi)
-
 const select = ref(null)
 const options = ref(['Google', 'Facebook', 'Twitter', 'Apple', 'Oracle'])
 </script>
@@ -62,10 +61,12 @@ const options = ref(['Google', 'Facebook', 'Twitter', 'Apple', 'Oracle'])
 
   @media (max-width: $mxl) {
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px 8px;
   }
 
   @media (max-width: $mlg) {
     grid-template-columns: 1fr 1fr;
+    gap: 16px 8px;
   }
 
   @media (max-width: $mxs) {

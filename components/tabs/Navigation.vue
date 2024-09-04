@@ -12,6 +12,7 @@ const { data: data } = await useFetch(ratingApi)
       </div>
       <h1 class="legacy-title">Наследие</h1>
       <TabsInformation
+        :is_verified="true"
         class="legacy-info-block"
         :count="data?.count"
         :reviews="data?.reviews"
@@ -47,7 +48,8 @@ const { data: data } = await useFetch(ratingApi)
 </template>
 
 <style lang="scss" scoped>
-@import '@/assets/style/variables.scss';
+@import '@/assets/style/variables';
+@import '@/assets/style/mixins';
 .legacy {
   border-bottom: 1px solid $color-border-two;
   padding-bottom: 32px;
@@ -66,6 +68,10 @@ const { data: data } = await useFetch(ratingApi)
 
 .legacy-info-block {
   margin-bottom: 24px;
+
+  @media (max-width: $mxs) {
+    display: none;
+  }
 }
 
 .legacy-image {
@@ -93,6 +99,7 @@ const { data: data } = await useFetch(ratingApi)
   border-radius: 12px;
   font-weight: 500;
   margin-bottom: 32px;
+  @include fslh(15, 24);
 
   @media (max-width: $mxs) {
     display: none;

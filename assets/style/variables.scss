@@ -16,11 +16,11 @@ $mxl: 1479px;
 $mxxl: 1919px;
 $mmd: $msm;
 
-$plr: 0; //Отступы по бокам
+$plr: 20; //Отступы по бокам
 $plrSm: 16; //Отступы по бокам на мобилках
 $wsm: calc(780 / $f-size-default) + rem;
-$wmd: calc(1360 / $f-size-default) + rem;
-$wxl: calc(1730 / $f-size-default) + rem;
+$wmd: calc(1400 / $f-size-default) + rem;
+$wxl: calc(1770 / $f-size-default) + rem;
 //===============================================
 $font: 'Inter', normal;
 $color-header: #fff7eb;

@@ -1,4 +1,56 @@
 {
+  "users": [
+    {
+      "email": "ilya@gmail.com",
+      "password": "$2a$10$mmZF0GMWYe8SStAf5MlCPOA8FBQJrjkBtlWUwnbW8Dsi1ksxTzNgK",
+      "id": 1
+    },
+    {
+      "email": "ilya2@mail.com",
+      "password": "$2a$10$51vYssH6aUIt726eqVaPeun5Hpq0UjDRfPj9TYBBQSpTfQxhRZwuy",
+      "id": 2
+    },
+    {
+      "email": "ilya4@gmail.com",
+      "password": "$2a$10$jiqBdxkg7DHU0ozGfNrVbe25TMxrx2svjCuRMeGuiyLykWaAkhocC",
+      "id": 3
+    },
+    {
+      "email": "ilya7@gmail.com",
+      "password": "$2a$10$LU6FQN4M3t4h1mx8rYZQLuxWYVobk4aGf9.z43ZjH2VMCdfm/Zq8q",
+      "id": 4
+    },
+    {
+      "email": "ilya11@gmail.com",
+      "password": "$2a$10$twrQJohvOZxbStLB3cLe3eo4rKtXXE8zIJ9jUX..jHtZSWod5RaTS",
+      "id": 5
+    },
+    {
+      "email": "ilya12@gmail.com",
+      "password": "$2a$10$m6invw5Pte3BN6DAfGRGrurqRDbr19kf2sbjDijIx7Kk1sSyPyLZ2",
+      "id": 6
+    },
+    {
+      "email": "ilya13@gmail.com",
+      "password": "$2a$10$9onHsF4Jsivq2KyPmwViRuM4pBcu41eRON7IvbDtmudZUgCJomB/q",
+      "id": 7
+    },
+    {
+      "email": "ilya14@gmail.com",
+      "password": "$2a$10$sKnHF.5O9ezNnx6o4MNL7.X0GScpYXMf78sSveS7PmbUqmBSFAlDG",
+      "id": 8
+    },
+    {
+      "email": "ilya110@gmail.com",
+      "password": "$2a$10$l3qGCRAXff/Og7xyj1i/FecIKp2GidfvazfbK4KMc8RDOEOMpok1i",
+      "id": 9
+    },
+    {
+      "email": "ilay1101@gmail.com",
+      "password": "$2a$10$3UCzw7aWP6s0OpVBHL59UutFx3vTQBbrudjzxIsxCczduxjHOXXDe",
+      "id": 10
+    }
+  ],
   "products": [
     {
       "name": "Сlavia Nord Grand сценическое цифровое пианино",
@@ -90,70 +142,100 @@
     {
       "name": "Дмитрий Хитрый",
       "id": "1",
-      "rating": { "count": "4.2", "reviews": "10" },
+      "rating": {
+        "count": "4.2",
+        "reviews": "10"
+      },
       "image": "/image/agent-1.png",
+      "verified": true,
       "description": "Помог справиться с потерей и организовать похороны для 126 семей ну и еще чуть описания, чтобы дойти до конца строки и текст будет отсекаться"
     },
-
     {
       "name": "Апполинарий Землеперекопский",
       "id": "1",
-      "rating": { "count": "4.2", "reviews": "10" },
+      "rating": {
+        "count": "4.2",
+        "reviews": "10"
+      },
       "image": "/image/agent-2.png",
+      "verified": true,
       "description": "Помог справиться с потерей и организовать похороны для 126 семей."
     },
-
     {
       "name": "Фёдор Сумкин",
       "id": "1",
-      "rating": { "count": "4.1", "reviews": "10" },
+      "rating": {
+        "count": "4.1",
+        "reviews": "10"
+      },
       "image": "/image/agent-3.png",
+      "verified": false,
       "description": "Помог справиться с потерей и организовать похороны для 126 семей ну и еще чуть описания, чтобы дойти до конца строки и текст будет отсекаться"
     },
     {
       "name": "Дмитрий Хитрый",
       "id": "1",
-      "rating": { "count": "2.9", "reviews": "10" },
+      "rating": {
+        "count": "2.9",
+        "reviews": "10"
+      },
       "image": "/image/agent-1.png",
+      "verified": true,
       "description": "Помог справиться с потерей и организовать похороны для 126 семей ну и еще чуть описания, чтобы дойти до конца строки и текст будет отсекаться"
     },
-
     {
       "name": "Апполинарий Землеперекопский",
       "id": "1",
-      "rating": { "count": "3.5", "reviews": "10" },
+      "rating": {
+        "count": "3.5",
+        "reviews": "10"
+      },
       "image": "/image/agent-2.png",
+      "verified": false,
       "description": "Помог справиться с потерей и организовать похороны для 126 семей ну и еще чуть описания, чтобы дойти до конца строки и текст будет отсекаться"
     },
-
     {
       "name": "Фёдор Сумкин",
       "id": "1",
-      "rating": { "count": "2.2", "reviews": "10" },
+      "rating": {
+        "count": "2.2",
+        "reviews": "10"
+      },
       "image": "/image/agent-3.png",
+      "verified": true,
       "description": "Помог справиться с потерей и организовать похороны для 126 семей ну и еще чуть описания, чтобы дойти до конца строки и текст будет отсекаться"
     },
     {
       "name": "Дмитрий Хитрый",
       "id": "1",
-      "rating": { "count": "3.2", "reviews": "10" },
+      "rating": {
+        "count": "3.2",
+        "reviews": "10"
+      },
       "image": "/image/agent-1.png",
+      "verified": true,
       "description": "Помог справиться с потерей и организовать похороны для 126 семей ну и еще чуть описания, чтобы дойти до конца строки и текст будет отсекаться"
     },
-
     {
       "name": "Апполинарий Землеперекопский",
       "id": "1",
-      "rating": { "count": "4.2", "reviews": "10" },
+      "rating": {
+        "count": "4.2",
+        "reviews": "10"
+      },
       "image": "/image/agent-2.png",
+      "verified": true,
       "description": "Помог справиться с потерей и организовать похороны для 126 семей ну и еще чуть описания, чтобы дойти до конца строки и текст будет отсекаться"
     },
-
     {
       "name": "Фёдор Сумкин",
       "id": "1",
-      "rating": { "count": "1.2", "reviews": "10" },
+      "rating": {
+        "count": "1.2",
+        "reviews": "10"
+      },
       "image": "/image/agent-3.png",
+      "verified": false,
       "description": "Помог справиться с потерей и организовать похороны для 126 семей ну и еще чуть описания, чтобы дойти до конца строки и текст будет отсекаться"
     }
   ]

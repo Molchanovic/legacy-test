@@ -1,5 +1,7 @@
 <script lang="ts" setup>
 interface IProps {
+  is_verified?: boolean
+  is_mobile_device?: boolean
   count: string
   reviews: string
 }
@@ -9,11 +11,15 @@ const props = defineProps<IProps>()
 
 <template>
   <div class="info-block flex-row">
-    <div class="info-block__item flex-row">
+    <div
+      v-if="is_verified"
+      class="info-block__item flex-row"
+    >
       <svg class="icon">
         <use xlink:href="@/assets/sprite.svg#check" />
       </svg>
-      <span>Документы проверены</span>
+      <span v-if="is_mobile_device">Проверен</span>
+      <span v-else>Документы проверены</span>
     </div>
     <div class="info-block__item flex-row">
       <svg class="icon">
@@ -28,9 +34,11 @@ const props = defineProps<IProps>()
 </template>
 
 <style lang="scss" scoped>
-@import '@/assets/style/variables.scss';
+@import '@/assets/style/variables';
+@import '@/assets/style/mixins';
 .info-block {
   gap: 6px;
+  @include fslh(15, 20);
 
   &__item {
     &::after {
@@ -47,10 +55,10 @@ const props = defineProps<IProps>()
       height: 16px;
       margin-right: 5px;
     }
-  }
 
-  @media (max-width: $mxs) {
-    display: none;
+    span {
+      white-space: nowrap;
+    }
   }
 }
 </style>

@@ -46,7 +46,7 @@ const { data: data } = await useFetch(generalApi)
           <span />
         </div>
         <div class="profile-menu__image">
-          <NuxtImg :src="data.avatar" />
+          <NuxtImg :src="data?.avatar" />
         </div>
       </div>
       <div class="header-basket">
@@ -59,7 +59,7 @@ const { data: data } = await useFetch(generalApi)
   </header>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import '@/assets/style/variables';
 @import '@/assets/style/mixins';
 
@@ -67,6 +67,10 @@ const { data: data } = await useFetch(generalApi)
   padding: 8px 0px;
   background-color: $color-header;
   @include fslh(15, 24);
+
+  @media (max-width: $msm) {
+    padding: 14px 0px;
+  }
 }
 
 .header-wrapper {
@@ -105,6 +109,10 @@ const { data: data } = await useFetch(generalApi)
   border-radius: 40px;
   min-height: unset;
 
+  .q-focus-helper {
+    display: none !important;
+  }
+
   .icon {
     fill: $color-grey;
     width: 18px;
@@ -136,13 +144,13 @@ const { data: data } = await useFetch(generalApi)
     margin-right: 8px;
   }
 
-  // @media (max-width: $mlg) {
-  //   margin-right: 15px;
+  @media (max-width: $mlg) {
+    margin-right: 15px;
 
-  //   &::after {
-  //     margin-left: 15px;
-  //   }
-  // }
+    &::after {
+      margin-left: 15px;
+    }
+  }
 
   @media (max-width: $msm) {
     display: none;
