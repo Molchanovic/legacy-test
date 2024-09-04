@@ -52,9 +52,7 @@ const formatPrice = computed(() =>
       v-if="!is_hide"
       class="product-card__footer"
     >
-      <span class="product-card__add-views"
-        >Увеличьте количество просмотров</span
-      >
+      <span class="product-card__add-views">Увеличьте количество просмотров</span>
       <q-btn
         class="btn product-card__btn"
         label="Продвигать"
@@ -66,7 +64,9 @@ const formatPrice = computed(() =>
       v-else
       class="product-card__footer"
     >
-      <div class="product-card__close">Объявление скрыто</div>
+      <div class="product-card__close">
+        Объявление скрыто
+      </div>
     </q-card-actions>
   </q-card>
 </template>

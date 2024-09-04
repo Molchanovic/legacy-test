@@ -1,1 +1,3 @@
-<template>weqw</template>
+<template>
+  <main>Index</main>
+</template>

@@ -7,7 +7,7 @@ interface IProps {
   rating_count: string
   rating_reviews: string
 }
-const props = defineProps<IProps>()
+defineProps<IProps>()
 const viewport = useViewport()
 </script>
 

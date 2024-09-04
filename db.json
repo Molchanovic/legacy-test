@@ -49,6 +49,11 @@
       "email": "ilay1101@gmail.com",
       "password": "$2a$10$3UCzw7aWP6s0OpVBHL59UutFx3vTQBbrudjzxIsxCczduxjHOXXDe",
       "id": 10
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "$2a$10$0W062JdZz92O575yr58lTuW6ou2bI7t.t9xjAw71.0P75z5iqPNIy",
+      "id": 11
     }
   ],
   "products": [

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { generalApi } from '@/api'
 
-const { data: data } = await useFetch(generalApi)
+const { data: data } = useFetch(generalApi)
 </script>
 
 <template>

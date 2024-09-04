@@ -6,7 +6,7 @@ interface IProps {
   reviews: string
 }
 
-const props = defineProps<IProps>()
+defineProps<IProps>()
 </script>
 
 <template>

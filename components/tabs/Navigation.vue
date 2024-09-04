@@ -10,7 +10,9 @@ const { data: data } = await useFetch(ratingApi)
       <div class="legacy-image">
         <NuxtImg src="/image/logo-cp.jpg" />
       </div>
-      <h1 class="legacy-title">Наследие</h1>
+      <h1 class="legacy-title">
+        Наследие
+      </h1>
       <TabsInformation
         :is_verified="true"
         class="legacy-info-block"

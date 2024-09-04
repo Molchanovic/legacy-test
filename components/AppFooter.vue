@@ -4,13 +4,25 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-wrapper flex-row">
-        <p class="copyright">© Annonce 2023</p>
+        <p class="copyright">
+          © Annonce 2023
+        </p>
         <nav class="footer-nav">
-          <NuxtLink to="/"> Документы </NuxtLink>
-          <NuxtLink to="/"> О компании </NuxtLink>
-          <NuxtLink to="/"> Продавцам </NuxtLink>
-          <NuxtLink to="/"> Покупателям </NuxtLink>
-          <NuxtLink to="/"> Разместить объявление </NuxtLink>
+          <NuxtLink to="/">
+            Документы
+          </NuxtLink>
+          <NuxtLink to="/">
+            О компании
+          </NuxtLink>
+          <NuxtLink to="/">
+            Продавцам
+          </NuxtLink>
+          <NuxtLink to="/">
+            Покупателям
+          </NuxtLink>
+          <NuxtLink to="/">
+            Разместить объявление
+          </NuxtLink>
         </nav>
         <a
           href="##"

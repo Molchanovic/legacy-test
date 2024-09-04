@@ -1,3 +1,4 @@
+/* eslint-disable */
 export default defineNuxtRouteMiddleware((to, from) => {
   const token = useCookie('token')
   if (to.path === '/agents' && !token.value) {
@@ -7,3 +8,4 @@ export default defineNuxtRouteMiddleware((to, from) => {
     return navigateTo('/products')
   }
 })
+/* eslint-enable */

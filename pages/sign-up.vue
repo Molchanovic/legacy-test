@@ -23,7 +23,7 @@ const register = async () => {
       token: responce.accessToken,
     },
   }
-  const token = useCookie('token', {
+  useCookie('token', {
     default: () => responce.accessToken,
     watch: false,
   })
@@ -57,8 +57,8 @@ const register = async () => {
         :rules="[
           (val) => (val !== null && val !== '') || 'Заполлните поле',
           (val) =>
-            (val !== null && val > 8) ||
-            'Пароль должен быть больше 7-ми символов',
+            (val !== null && val > 8)
+            || 'Пароль должен быть больше 7-ми символов',
         ]"
       />
 
@@ -67,7 +67,9 @@ const register = async () => {
         type="submit"
         color="primary"
       />
-      <NuxtLink to="/sign-in"> Войти </NuxtLink>
+      <NuxtLink to="/sign-in">
+        Войти
+      </NuxtLink>
     </q-form>
   </section>
 </template>
